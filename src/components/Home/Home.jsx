@@ -1,7 +1,13 @@
+import { Outlet } from "react-router-dom";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
 const Home = () => {
   return (
-    <div>
-      <h1>This is Home Page</h1>
+    <div className="w-11/12 mx-auto pt-6">
+      <Header></Header>
+      <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };
